@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-  width: 80%;
+  width: 83%;
   margin: auto;
 }
 
@@ -23,19 +23,33 @@ header {
   padding-top: 11px;
 }
 #header_top #header_top_floated {
+  padding-right: 20px;
   float: right;
   display: flex;
   align-items: center;
+  position: relative;
 }
 #header_top span {
   font-size: 14px;
   color: #949493;
   padding-right: 24px;
 }
+#header_top span:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
 #header_top i {
   color: #1E9DFF;
   font-size: 14px;
   padding-right: 11px;
+}
+#header_top #telephone_time {
+  width: 220px;
+  position: absolute;
+  background-color: white;
+  top: 26px;
+  left: -30px;
 }
 
 #header_bottom {
@@ -44,4 +58,90 @@ header {
 }
 #header_bottom img {
   height: 25px;
+}
+#header_bottom nav {
+  display: inline-block;
+}
+#header_bottom div {
+  display: inline-block;
+  color: white;
+  padding: 0 20px;
+  font-size: 16px;
+}
+#header_bottom i {
+  font-size: 10px;
+  color: #949493;
+}
+
+main {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Yemen_Chameleon.jpg/1200px-Yemen_Chameleon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 470px;
+}
+
+#camaleont_block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#author {
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  padding-right: 80px;
+  padding-bottom: 25px;
+}
+
+#camaleont {
+  color: white;
+  width: 41%;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+#camaleont h1 {
+  font-size: 31px;
+  padding-bottom: 20px;
+}
+#camaleont h2 {
+  padding-bottom: 20px;
+}
+#camaleont h5 {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+#camaleont .fas.fa-chevron-right {
+  font-size: 15px;
+  padding-right: 5px;
+  color: #949493;
+}
+#camaleont .btn {
+  padding: 8px;
+  background-color: #949493;
+  width: 207px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#camaleont .btn #btn_scritta {
+  padding-right: 8px;
+}
+#camaleont .btn #btn_logo {
+  border-left: 1px solid white;
+  display: inline-block;
+}
+#camaleont .btn #btn_logo i {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+#buynow {
+  background-color: black;
+  width: 36%;
+  height: 100%;
+  margin-top: 20px;
 }

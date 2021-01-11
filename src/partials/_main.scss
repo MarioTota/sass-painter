@@ -1,0 +1,68 @@
+main {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Yemen_Chameleon.jpg/1200px-Yemen_Chameleon.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 470px;
+}
+#camaleont_block {
+  display: flex;
+  justify-content: flex-end;
+}
+#author {
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  padding-right: 80px;
+  padding-bottom: 25px;
+}
+#camaleont {
+  color: white;
+  width: 41%;
+  margin-top: 20px;
+  padding-top: 20px;
+  & h1 {
+    font-size: 31px;
+    padding-bottom: 20px;
+  }
+  & h2 {
+    padding-bottom: 20px;
+  }
+  & h5 {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  & .fas.fa-chevron-right {
+    font-size: 15px;
+    padding-right: 5px;
+    color: $header_grey;
+  }
+  & .btn {
+    padding: 8px;
+    background-color: $header_grey;
+    width: 207px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & .btn #btn_scritta {
+    padding-right: 8px;
+  }
+  & .btn #btn_logo {
+    border-left: 1px solid white;
+    display: inline-block;
+  }
+  & .btn #btn_logo i {
+    color: white;
+    font-size: 24px;
+    padding-left: 10px;
+  }
+}
+#buynow {
+  background-color: black;
+  width: 36%;
+  height: 100%;
+  margin-top: 20px;
+}
