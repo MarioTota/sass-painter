@@ -1,5 +1,5 @@
 main {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Yemen_Chameleon.jpg/1200px-Yemen_Chameleon.jpg');
+  background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -12,11 +12,13 @@ main {
 #author {
   height: 470px;
   display: flex;
+  color: $header_grey;
   flex-direction: column;
   justify-content: flex-end;
   color: white;
   padding-right: 80px;
   padding-bottom: 25px;
+  font-size: 13px;
 }
 #camaleont {
   color: white;
@@ -24,14 +26,18 @@ main {
   margin-top: 20px;
   padding-top: 20px;
   & h1 {
-    font-size: 31px;
+    font-weight: normal;
+    font-size: 29px;
     padding-bottom: 20px;
   }
   & h2 {
+    font-size: 20px;
+    font-weight: normal;
     padding-bottom: 20px;
   }
   & h5 {
-    font-size: 18px;
+    font-weight: normal;
+    font-size: 15px;
     padding-bottom: 15px;
   }
   & .fas.fa-chevron-right {
@@ -39,22 +45,29 @@ main {
     padding-right: 5px;
     color: $header_grey;
   }
-  & .btn {
-    padding: 8px;
-    background-color: $header_grey;
-    width: 207px;
+  & #btn {
+    padding: 12px;
+    background-color: $button_color;
+    margin-top: 23px;
+    width: 213px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  & .btn #btn_scritta {
+  & #btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  & #btn #btn_scritta {
     padding-right: 8px;
   }
-  & .btn #btn_logo {
+  & #btn #btn_logo {
     border-left: 1px solid white;
-    display: inline-block;
+    display: flex;
+    height: 35px;
+    align-items: center;
   }
-  & .btn #btn_logo i {
+  & #btn #btn_logo i {
     color: white;
     font-size: 24px;
     padding-left: 10px;
@@ -62,7 +75,57 @@ main {
 }
 #buynow {
   background-color: black;
-  width: 36%;
-  height: 100%;
+  width: 34%;
   margin-top: 20px;
+  padding: 20px 16px;
+  & #price_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    & #price {
+      color: white;
+      & #prezzo {
+        font-size: 26px;
+      }
+      & #download {
+        font-size: 15px;
+        padding: 10px 0;
+        color: $header_grey;
+      }
+    }
+  }
+  & #cta {
+    background-color: $header_blue;
+    width: 41%;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    margin-top: 10px;
+  }
+  & #cta:hover {
+    cursor: pointer;
+    background-color: #28ADFF;
+  }
+  & #limited_offer {
+    background-color: white;
+    margin-top: 37px;
+    padding: 8px 12px;
+    cursor: pointer;
+    & div {
+      padding: 2px 0;
+    }
+    &:hover .limited_text:nth-child(3) {
+      text-decoration: underline;
+    }
+    & .limited_text:nth-child(1) {
+      font-size: 20px;
+    }
+    & .limited_text:nth-child(2) {
+      font-size: 16px;
+    }
+    & .limited_text:nth-child(3) {
+      font-size: 16px;
+      color: $header_blue;
+    }
+  }
 }

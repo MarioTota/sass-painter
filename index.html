@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Painter</title>
 </head>
@@ -14,18 +16,20 @@
       <div id="header_top">
         <div id="header_top_floated">
           <i class="fas fa-phone-alt"></i>
-          <span>1-877-582-6735</span>
-          <div id="telephone_time">
-            <div class="">Mon-Fri: 9am-10pm EST</div>
-            <div class="">Sat-Sun: 9am-06pm EST</div>
-          </div>
+          <span id="phone_number">1-877-582-6735
+            <div id="telephone_time">
+              <i class="fas fa-caret-up"></i>
+              <div class="">Mon-Fri: 9am-10pm EST</div>
+              <div class="">Sat-Sun: 9am-06pm EST</div>
+            </div>
+          </span>
           <i class="fas fa-comment-alt"></i>
           <span>Chat</span>
           <i class="fas fa-user-alt"></i>
           <span>Sign in</span>
           <i class="fas fa-shopping-cart"></i>
           <span>Cart</span>
-          <select class="" name="">
+          <select name="Languages">
             <option value="Deutsch">Deutsch</option>
             <option value="English">English</option>
             <option value="Français">Français</option>
@@ -36,27 +40,15 @@
       </div>
       <div id="header_bottom">
         <img src="https://www.painterartist.com/static/ptr/images/logo_painter.png" alt="">
-        <nav>
-          <div>
-            Products
-            <i class="fas fa-chevron-down"></i>
-          </div>
-          <div>
-            Brushes
-            <i class="fas fa-chevron-down"></i>
-          </div>
-          <div>Wacom Tablets</div>
-          <div>Special Offers</div>
-          <div>Free Trials</div>
-          <div>Business</div>
-          <div>
-            Support
-            <i class="fas fa-chevron-down"></i>
-          </div>
-          <div>
-            Learning
-            <i class="fas fa-chevron-down"></i>
-          </div>
+        <nav id="nav_header">
+          <div class="li_nav">Products<i class="fas fa-chevron-down"></i></div>
+          <div class="li_nav">Brushes<i class="fas fa-chevron-down"></i></div>
+          <div class="li_nav">Wacom Tablets</div>
+          <div class="li_nav">Special Offers</div>
+          <div class="li_nav">Free Trials</div>
+          <div class="li_nav">Business</div>
+          <div class="li_nav">Support<i class="fas fa-chevron-down"></i></div>
+          <div class="li_nav learning">Learning<i class="fas fa-chevron-down"></i></div>
         </nav>
       </div>
     </div>
@@ -73,16 +65,28 @@
           <h5><i class="fas fa-chevron-right"></i>Industry-acclaimed brushes</h5>
           <h5><i class="fas fa-chevron-right"></i>Incredible speed</h5>
           <h5><i class="fas fa-chevron-right"></i>Built-in learning</h5>
-          <div class="btn">
+          <div id="btn">
             <div id="btn_scritta">
-              <div class="">DOWNLOAD TRIAL</div>
-              <div class="">For Windows/Mac</div>
+              <div>DOWNLOAD TRIAL</div>
+              <div>For Windows/Mac</div>
             </div>
             <div id="btn_logo"><i class="fas fa-download"></i></div>
           </div>
         </div>
         <div id="buynow">
-          asd
+          <div id="price_block">
+            <div id="price">
+              <div id="prezzo">$49.99</div>
+              <div id="download">DOWNLOAD</div>
+            </div>
+            <img src="https://www.painterartist.com/static/common/images/ico-30day-money-back-guarantee-en.png" alt="">
+          </div>
+          <div id="cta">BUY NOW</div>
+            <div id="limited_offer">
+              <div class="limited_text">LIMITED-TIME OFFER</div>
+              <div class="limited_text">FREE Animations Essentials Brush Pack ($19.99 value)</div>
+              <div class="limited_text">Learn More</div>
+            </div>
         </div>
       </div>
     </div>
