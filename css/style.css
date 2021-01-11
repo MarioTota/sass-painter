@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 90px;
+  background-color: black;
+}
+
+#header_top {
+  width: 100%;
+  height: 45px;
+  float: right;
+}
+
+#header_top span {
+  color: #737373;
+}
+
+#header_top i {
+  color: #1E9DFF;
+}
+
+#header_bottom {
+  width: 100%;
+  height: 45px;
+}
