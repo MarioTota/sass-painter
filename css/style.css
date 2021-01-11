@@ -4,26 +4,44 @@
   padding: 0;
 }
 
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
 header {
   height: 90px;
   background-color: black;
 }
 
 #header_top {
+  content: "";
+  display: table;
+  clear: both;
   width: 100%;
   height: 45px;
+  padding-top: 11px;
+}
+#header_top #header_top_floated {
   float: right;
+  display: flex;
+  align-items: center;
 }
-
 #header_top span {
-  color: #737373;
+  font-size: 14px;
+  color: #949493;
+  padding-right: 24px;
 }
-
 #header_top i {
   color: #1E9DFF;
+  font-size: 14px;
+  padding-right: 11px;
 }
 
 #header_bottom {
   width: 100%;
   height: 45px;
+}
+#header_bottom img {
+  height: 25px;
 }
